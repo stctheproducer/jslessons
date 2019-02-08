@@ -1,8 +1,145 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title></title>
-    <meta content="">
-    <style></style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Loan Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulmaswatch/litera/bulmaswatch.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+      html {
+        background-color: #343a44;
+      }
+      #loading,
+      #results {
+        display: none;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="box">
+              <h3 class="title is-3 has-text-centered">Loan Calculator</h3>
+              <form id="loan-form">
+                <div class="field has-addons">
+                  <p class="control">
+                    <a class="button is-static">$</a>
+                  </p>
+                  <p class="control is-expanded">
+                    <input
+                      id="amount"
+                      type="number"
+                      class="input"
+                      placeholder="Loan Amount"
+                    />
+                  </p>
+                </div>
+
+                <div class="field has-addons">
+                  <p class="control">
+                    <a class="button is-static">%</a>
+                  </p>
+                  <p class="control is-expanded">
+                    <input
+                      id="interest"
+                      type="number"
+                      class="input"
+                      placeholder="Annual Interest"
+                    />
+                  </p>
+                </div>
+
+                <div class="field">
+                  <div class="control is-expanded">
+                    <input
+                      id="years"
+                      class="input"
+                      type="number"
+                      placeholder="Years To Repay"
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <input
+                      class="button is-fullwidth has-text-white"
+                      style="background-color: #343a44;"
+                      type="submit"
+                      value="Calculate"
+                    />
+                  </div>
+                </div>
+              </form>
+              <!-- LOADER -->
+              <div id="loading">
+                <div class="content"></div>
+                <progress class="progress" value="0" max="100"></progress>
+                <div class="content"></div>
+              </div>
+              <!-- RESULTS -->
+              <div id="results">
+                <div class="content"></div>
+                <h4 class="title is-4 has-text-centered">Results</h4>
+                <div class="field has-addons">
+                  <p class="control">
+                    <a class="button is-static">Monthly Payment</a>
+                  </p>
+                  <p class="control is-expanded">
+                    <input
+                      id="monthly-payment"
+                      class="input"
+                      type="text"
+                      disabled
+                    />
+                  </p>
+                </div>
+
+                <div class="field has-addons">
+                  <p class="control">
+                    <a class="button is-static">Total Payment</a>
+                  </p>
+                  <p class="control is-expanded">
+                    <input
+                      id="total-payment"
+                      class="input"
+                      type="text"
+                      disabled
+                    />
+                  </p>
+                </div>
+
+                <div class="field has-addons">
+                  <p class="control">
+                    <a class="button is-static">Total Interest</a>
+                  </p>
+                  <p class="control is-expanded">
+                    <input
+                      id="total-interest"
+                      class="input"
+                      type="text"
+                      disabled
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
 </html>
