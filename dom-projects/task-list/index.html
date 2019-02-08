@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task List</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulmaswatch/litera/bulmaswatch.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style></style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-full">
+            <div id="main" class="card">
+              <div class="card-header">
+                <h5 class="card-header-title">Task List</h5>
+              </div>
+              <div class="card-content">
+                <form id="task-form">
+                  <div class="field">
+                    <label for="task" class="label">New Task</label>
+                    <div class="control">
+                      <input
+                        name="task"
+                        id="task"
+                        class="input"
+                        type="text"
+                        placeholder="Add task"
+                      />
+                    </div>
+                  </div>
+                  <input class="button" type="submit" value="Add Task" />
+                </form>
+                <!-- <hr /> -->
+                <div class="content"></div>
+                <h6 class="title is-6" id="task-title">Tasks</h6>
+                <div class="field">
+                  <label for="filter" class="label">Filter Tasks</label>
+                  <div class="control">
+                    <input
+                      name="filter"
+                      id="filter"
+                      class="input"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="content"></div>
+                <ul class="task-list"></ul>
+                <div class="content"></div>
+                <a href="#" class="clear-tasks button is-black">Clear Tasks</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
