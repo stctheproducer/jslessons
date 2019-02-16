@@ -1,0 +1,11 @@
+{
+  "name": "number-guesser",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "skeleton-css": "^2.0.4"
+  }
+}
