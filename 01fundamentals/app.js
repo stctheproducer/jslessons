@@ -44,3 +44,6 @@ console.clear()
 val = window.navigator.language
 
 console.log(val)
+
+let chanda = String.toString(5)
+console.log(chanda)
