@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "address": "123 First Road"
+  },
+  {
+    "id": 2,
+    "name": "Brian Wilt",
+    "address": "456 Second Road"
+  },
+  {
+    "id": 3,
+    "name": "Steven Smith",
+    "address": "789 Third Road"
+  }
+]
