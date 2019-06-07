@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootswatch": "^4.3.1",
+    "skeleton-css": "^2.0.4"
+  },
+  "devDependencies": {
+    "laravel-mix": "^4.0.16"
+  }
 }
